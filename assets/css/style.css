@@ -492,3 +492,115 @@ a {
     opacity: 1;
     margin-top: 5px;
 }
+/* Service */
+.service {
+    margin-top: 190px;
+    background: #fff6ed;
+}
+.service__inner {
+    padding: 68px 0 100px;
+}
+.service__top {
+    text-align: center;
+}
+.service__desc {
+    color: #5e6085;
+    font-family: Sora, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.service__body {
+    margin-top: 71px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 70px;
+}
+
+.service-item {
+    width: 294px;
+    padding: 30px 28px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #fff;
+}
+.service-item + .service-item {
+    margin-top: 25px;
+}
+.service-item__heading {
+    position: relative;
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    padding-left: 12px;
+}
+.service-item__heading::before {
+    position: absolute;
+    content: "";
+    inset: 0 auto 0 0;
+    width: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
+}
+.service-item__desc {
+    margin-top: 18px;
+    width: 244px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    font-weight: 400;
+}
+.service-item__link {
+    position: relative;
+    display: inline-block;
+    margin-top: 24px;
+    color: #34396a;
+    font-family: Sora, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+.service-item__link::after {
+    position: absolute;
+    content: url("../icon/arrow-up-right.svg");
+    margin-left: 5px;
+}
+.service__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.service__image {
+    margin-top: 17px;
+    position: relative;
+    z-index: 1;
+}
+.service__image::after {
+    content: "";
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    height: 350px;
+    border-radius: 16px;
+    background: #9df1fb;
+}
+.service__cta-wrap {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+.service__btn {
+    color: #ff5b2e;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    min-width: 214px;
+    border-radius: 31px;
+    border: 1px solid #ff5b2e;
+    opacity: 0.6;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
